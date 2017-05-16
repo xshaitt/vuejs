@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+</head>
+<body>
+<div id="app">
+    {{num>1000?num2:333}}
+    <p v-if="isFalse">你看到我了</p>
+    <a :href="url">{{a}}</a>
+    <button v-on:click="equipment">点我送装备</button>
+</div>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script src="https://unpkg.com/vue@2.3.3/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            isFalse: false,
+            a:'百度',
+            url:'https://www.baidu.com'
+        },
+        methods:{
+            equipment:function () {
+                alert('恭喜少侠喜得屠龙刀！');
+            }
+        }
+    })
+</script>
+</html>

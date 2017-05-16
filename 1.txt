@@ -1,0 +1,16 @@
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script src="https://unpkg.com/vue@2.3.3/dist/vue.js"></script>
+<link href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css" rel="stylesheet">
+$users = User::all();
+@foreach()…….
+由php转换成html
+vue.js获取到$users这样的数据，通常json格式，渲染成html
+大概的计划，先学规则和语法，用一个laravel框架写的用户管理模块，使用vue.js前后端分离
+除了ie6,7,8,9以外的浏览器全都支持
+
+在vue.js当中的{{}}里面只能使用js的表达式，不能使用类似流程控制等语句.......
+Vue.js以v-开头的命令我们称之为指令
+比如：
+v-bind
+v-on
+v-if
